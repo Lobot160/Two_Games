@@ -1,0 +1,47 @@
+body{
+    background-color: #f9f9f9;
+}
+.btn-primary{
+    --bs-btn-bg: #6c757d;
+    --bs-btn-border-color: #6c757d;
+    --bs-btn-hover-bg: #5c636a;
+}
+.trigger{
+    padding: 10px 20px;
+}
+.content{
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: none;
+}
+.content.active{
+    display: block;
+}
+
+#previous{
+    visibility: hidden;
+}
+#newGame{
+    visibility: hidden;
+}
+#response{
+    padding: 10px;
+    font-size: xx-large;
+}
+.higher{
+    background-color: lightblue;
+    color: blue;
+}
+.lower{
+    background-color: pink;
+    color: blue;
+}
+.tooMany{
+    background-color: red;
+    color: black;
+}
+.correct{
+    background-color: lightgreen;
+    color: green;
+}

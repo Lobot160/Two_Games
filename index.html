@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Asignment Title</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container my-5 mx-auto">
+        <h1 class="text-center text-primary">Logan Haroldsen</h1>
+        <h1 class="text-center text-primary">Shall We Play a Game?</h1>
+        <div class="tabs">
+            <div class="d-grid gap-2 d-md-flex justify-content-center my-4">
+                <button class="trigger btn btn-primary" data-target="#coinToss">Coin Toss</li>
+                <button class="trigger btn btn-primary" data-target="#guessingGame">Guessing Game</li>
+            </div>
+
+            <!-- Coin Toss Game-->
+            <div id="coinToss" class="content text-center">
+                <h1 class="text-center text-primary">Coin toss</h1>
+                <div class="d-grid gap-2 d-md-flex justify-content-center my-4">
+                    <button id="heads" class="btn btn-secondary">Heads</button>
+                    <button id="tails" class="btn btn-secondary">Tails</button>
+                </div>
+                <img src="imgs/both.jpg" alt="two coins" class="mb-4">
+                <div id="feedback" class="d-none">
+                    <p id = 'toss' class="mb-4">you chose heads<br>
+                        the toss is heads<br>
+                        you were correct!</p>
+                    <p id = 'score'>Wins = <span id="wins" class="me-4">0</span> Losses = <span id="loss">0</span></p>
+                </div>
+                <script src="coin.js"></script>
+            </div>
+
+            <!-- Guessing Game -->
+            <div id="guessingGame" class="content text-center">
+                <h1 class="text-center text-primary">Higher or Lower!</h1>
+                <p>Guess a number from 1 to 100<br>The correct number will be higher or lower<br>Guess the correct number within 10 turns to win!</p>
+
+                <form id="guessForm">
+                    <label for="guess">Enter a guess: </label>
+                    <input type="number" name="guess" id="guess" min="1" max="100">
+                </form>
+
+                <p id="previous">Previous Guesses:</p>
+                <p><span id ="response"></span></p>
+
+                <script src="guess.js"></script>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
