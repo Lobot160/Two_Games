@@ -1,7 +1,8 @@
 # **Play 2 different games on the same Page!**
 
 ## **Games Available**
-1. _Coin Flip_
+1. _Coin Flip_<br>
+   ![A coin heads up](/imgs/heads.jpg)
 2. _Higher or Lower_
 
 ## **Switch between games using the custom tabs!**
